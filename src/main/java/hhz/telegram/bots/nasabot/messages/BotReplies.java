@@ -1,9 +1,11 @@
-package hhz.telegram.bots.nasabot.replies;
+package hhz.telegram.bots.nasabot.messages;
 
 import hhz.telegram.bots.nasabot.client.NasaClient;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public enum BotReplies {
     INFO("""
             Дороу. Этот бот присылает картинку дня с сайта NASA
@@ -20,10 +22,6 @@ public enum BotReplies {
             Или неверный формат даты (прим. 2024-01-01)""");
 
     private String message;
-
-    BotReplies(String message) {
-        this.message = message;
-    }
 
     public void setUrl(String url, String date) {
         if (this == DATE_PICTURE) {
