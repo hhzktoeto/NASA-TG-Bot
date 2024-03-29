@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: nasabot
+
+bot:
+  name: INSERT_YOUR_BOT_NAME
+  token: INSERT_YOUR_BOT_TOKEN
+  api:
+    url: INSERT_YOUR_API_KEY
